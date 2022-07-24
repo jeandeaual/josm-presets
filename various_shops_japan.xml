@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="jeandeaual"
+  version="1.0"
+  shortdescription="Various shops in Japan"
+  fr.shortdescription="Magasins divers au Japon"
+  description="Various shops in Japan."
+  fr.description="Magasins divers au Japon.">
+
+  <group name="Various Shops Japan" icon="presets/shop/laundry.svg">
+
+    <item name="Rice Shop" fr.name="Magasin de riz" ja.name="米販売店" type="node,closedway,multipolygon" icon="presets/shop/groceries/greengrocer.svg">
+      <label text="Rice Shop" fr.text="Magasin de riz" ja.text="米販売店" />
+      <key key="shop" value="rice" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <!-- TODO: craft or shop? -->
+    <item name="Tatami Shop" fr.name="Magasin de tatami" ja.name="畳販売店" type="node,closedway,multipolygon" icon="presets/craft/tiler.svg">
+      <label text="Tatami Shop" fr.text="Magasin de tatami" ja.text="畳販売店" />
+      <key key="shop" value="tatami" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Kimono Shop" fr.name="Magasin de kimono" ja.name="着物" type="node,closedway,multipolygon" icon="presets/shop/clothes.svg">
+      <label text="Kimono Shop" fr.text="Magasin de kimono" ja.text="着物" />
+      <key key="shop" value="clothes" />
+      <key key="clothes" value="kimono" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Locksmith" fr.name="Serrurier" ja.name="鍵屋" type="node,closedway,multipolygon" icon="presets/craft/locksmith.svg">
+      <label text="Locksmith" fr.text="Serrurier" ja.text="鍵屋" />
+      <key key="craft" value="locksmith" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Shop selling Buddhist articles" fr.name="Magasin d'articles bouddhistes" ja.name="仏具店 " type="node,closedway,multipolygon" icon="presets/religion/buddhism.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
+      <label text="Shop selling Buddhist articles" fr.text="Magasin d'articles bouddhistes" ja.text="仏具店 " />
+      <key key="shop" value="religious" />
+      <key key="religion" value="buddhist" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Pachinko" ja.name="パチンコ" type="node,closedway,multipolygon" icon="presets/leisure/casino.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
+      <label text="Pachinko" ja.text="パチンコ" />
+      <key key="amenity" value="gambling" />
+      <key key="gambling" value="pachinko" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="smoking" text="Is smoking allowed here?" values="yes,no,dedicated,separated,isolated,outside" default="yes" />
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Mahjong Parlor" ja.name="雀荘" type="node,closedway,multipolygon" icon="presets/leisure/casino.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
+      <label text="Mahjong Parlor" ja.text="雀荘" />
+      <key key="amenity" value="gambling" />
+      <key key="gambling" value="mahjong" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="smoking" text="Is smoking allowed here?" values="yes,no,dedicated,separated,isolated,outside" />
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Fried Dumplings Restaurant" ja.name="焼き小籠包" type="node,closedway,multipolygon" icon="presets/food/restaurant.svg">
+      <label text="Fried Dumplings Restaurant" ja.text="焼き小籠包" />
+      <key key="amenity" value="restaurant" />
+      <key key="cuisine" value="chinese;fried_dumplings" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="takeaway" text="Can we order food to go?" values="yes,no,only" default="yes" />
+
+      <combo key="smoking" text="Is smoking allowed here?" values="yes,no,dedicated,separated,isolated,outside" />
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Kebab" ja.name="ケバブ" type="node,closedway,multipolygon" icon="presets/food/fast_food.svg">
+      <label text="Kebab" ja.text="ケバブ" />
+      <combo key="amenity" text="Restaurant if we can eat inside, fast food otherwise" values="restaurant,fast_food" />
+      <key key="cuisine" value="kebab" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="takeaway" text="Can we order food to go?" values="yes,no,only" default="yes" />
+
+      <combo key="smoking" text="Is smoking allowed here?" values="yes,no,dedicated,separated,isolated,outside" />
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Indian Curry" ja.name="インドカレー" type="node,closedway,multipolygon" icon="presets/food/restaurant.svg">
+      <label text="Indian Curry" ja.text="インドカレー" />
+      <key key="amenity" value="restaurant" />
+
+      <multiselect key="cuisine" text="Cuisine" values="curry;asian;indian" default="curry;indian" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="takeaway" text="Can we order food to go?" values="yes,no,only" default="yes" />
+
+      <combo key="smoking" text="Is smoking allowed here?" values="yes,no,dedicated,separated,isolated,outside" />
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Okonomiyaki" ja.name="お好み焼" type="node,closedway,multipolygon" icon="presets/food/restaurant.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
+      <label text="Okonomiyaki" ja.text="お好み焼" />
+      <combo key="amenity" text="Restaurant if we can eat inside, fast food otherwise" values="restaurant,fast_food" />
+      <key key="cuisine" value="savory_pancakes" />
+      <key key="cuisine:ja" value="お好み焼" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="takeaway" text="Can we order food to go?" values="yes,no,only" />
+
+      <combo key="smoking" text="Is smoking allowed here?" values="yes,no,dedicated,separated,isolated,outside" />
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Bubble Tea" fr.name="Thé aux perles" ja.name="タピオカティー" type="node,closedway,multipolygon" icon="presets/food/restaurant.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:cuisine%3Dbubble_tea" />
+      <label text="Bubble Tea" fr.text="Thé aux perles" ja.text="タピオカティー" />
+      <key key="amenity" value="cafe" />
+      <key key="cuisine" value="bubble_tea" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="takeaway" text="Can we order to go?" values="yes,no,only" default="yes" />
+
+      <combo key="smoking" text="Is smoking allowed here?" values="yes,no,dedicated,separated,isolated,outside" />
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Bakery" fr.name="Boulangerie" ja.name="パン屋" type="node,closedway,multipolygon" icon="presets/shop/groceries/bakery.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dbakery" />
+      <label text="Bakery" fr.text="Boulangerie" ja.text="パン屋" />
+      <key key="shop" value="bakery" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="oven" text="Type of oven" values="wood_fired,electric,no" />
+      <check key="pastry" text="Boulangerie-patisserie" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Pharmacy" fr.name="Pharmacie" ja.name="薬局" type="node,closedway,multipolygon" icon="presets/health/pharmacy.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpharmacy" />
+      <label text="Pharmacy" fr.text="Pharmacie" ja.text="薬局" />
+      <key key="amenity" value="pharmacy" />
+      <combo key="dispensing" text="Dispensing" fr.text="Accepte les prescriptions ?" ja.text="処方箋受け付け・調剤" value="yes,no" default="yes" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Drug Store" fr.name="Drug store" ja.name="ドラッグストア" type="node,closedway,multipolygon" icon="presets/shop/chemist.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dchemist" />
+      <label text="Drug store" fr.text="Parapharmacie" ja.text="ドラッグストア" />
+      <key key="shop" value="chemist" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Recycle Shop" ja.name="リサイクルショップ" type="node,closedway,multipolygon" icon="presets/shop/charity.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dsecond_hand" />
+      <label text="Recycle shop" ja.text="リサイクルショップ" />
+      <key key="shop" value="second_hand" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Bookstore" fr.name="Librairie" ja.name="本屋" type="node,closedway,multipolygon" icon="presets/shop/book.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dbooks" />
+      <label text="Bookstore" fr.text="Librairie" ja.text="本屋" />
+      <key key="shop" value="books" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="second_hand" text="Does it sell used books?" values="yes,only,no" default="" />
+      <multiselect key="books" text="What king of books are sold here?" values="academic;anarchism;antiquarian;children;comic;discount;erotic;religion" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Vape Shop" fr.name="Magasin de cigarettes électroniques" type="node,closedway,multipolygon" icon="presets/shop/tobacco.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3De-cigarette" />
+      <label text="Vape shop" fr.text="Magasin de cigarettes électroniques" />
+      <key key="shop" value="e-cigarette" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Hairdresser" fr.name="Coiffeur" ja.name="ヘアーサロン" type="node,closedway,multipolygon" icon="presets/shop/hairdresser.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dhairdresser" />
+      <label text="Hairdresser" fr.text="Coiffeur" ja.text="ヘアーサロン" />
+      <key key="shop" value="hairdresser" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <check key="male" text="Male only" />
+      <check key="female" text="Female only" />
+      <check key="unisex" text="Available to all (default)" />
+
+      <combo key="reservation" text="Reservation" values="required,recommended,no,yes,members_only" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Camera Shop" fr.name="Magasin d'appareils photo" ja.name="カメラ" type="node,closedway,multipolygon" icon="presets/shop/photo.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dcamera" />
+      <label text="Camera Shop" fr.text="Magasin d'appareils photo" ja.text="カメラ" />
+      <key key="shop" value="camera" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="second_hand" text="Does it sell used cameras?" values="yes,only,no" />
+      <!-- <multiselect key="camera:sales" text="Reservation" values="yes;no;used" default="yes" /> -->
+      <check key="camera:repair" text="Does it offer a repair service?" />
+      <check key="camera:parts" text="Does it sell camera spare parts and accessories?" />
+      <multiselect key="camera:type" text="What type of camera is sold here?" values="digital;slr;video" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Anime" ja.name="アニメ" type="node,closedway,multipolygon" icon="presets/sightseeing/arts_centre.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Danime" />
+      <label text="Anime" ja.text="アニメ" />
+      <key key="shop" value="anime" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <check key="anime:video" text="Does it sell video disks and tapes?" />
+      <check key="anime:manga" text="Does it sell manga?" />
+      <check key="anime:costume" text="Does it sell costumes for cosplay?" />
+      <check key="anime:gift" text="Does it sell gifts, toys or souvenirs?" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+  </group>
+
+</presets>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="jeandeaual"
+  version="1.0"
+  shortdescription="Various amenities in Japan"
+  fr.shortdescription="Diverses commodités au Japon"
+  description="Various amenities in Japan."
+  fr.description="Diverses commodités au Japon.">
+
+  <group name="Various Amenities Japan" icon="presets/service/fire_hydrant.svg">
+
+    <item name="Vending Machine" fr.name="Distributeur automatique" ja.name="自動販売機" type="node" icon="presets/transport/ticket-machine.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dvending_machine" />
+      <label text="Vending Machine" fr.text="Distributeur automatique" ja.text="自動販売機" />
+      <key key="amenity" value="vending_machine" />
+      <!-- <key key="currency:JPY" value="yes" /> -->
+
+      <check key="payment:cash" text="Can we pay using coins and notes?" default="on" />
+      <check key="payment:icsf" text="Can we pay using Suica / contactless payment?" />
+      <multiselect key="vending" text="What does it sell?" values="drinks;coffee;food;newspapers;water;cigarettes;condoms" />
+    </item>
+
+    <item name="Gashapon" ja.name="ガシャポン" type="node" icon="presets/transport/ticket-machine.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dvending_machine" />
+      <label name="Gashapon" ja.name="ガシャポン" />
+      <key key="amenity" value="vending_machine" />
+      <key key="vending" value="toys" />
+      <key key="payment:coins" value="yes" />
+    </item>
+
+    <item name="Coin Locker" fr.name="Consigne à bagages (casier)" ja.name="コインロッカー" type="node" icon="presets/transport/ticket-machine.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
+      <label name="Coin Locker" fr.text="Consigne à bagages" ja.name="コインロッカー" />
+      <key key="amenity" value="vending_machine" />
+      <key key="vending" value="locker" />
+      <check key="payment:coins" text="Can we pay using coins?" default="on" />
+      <check key="payment:icsf" text="Can we pay using Suica / contactless payment?" />
+    </item>
+
+    <item name="Waste Basket" fr.name="Poubelle" ja.name="ゴミ箱" type="node" icon="presets/service/recycling/waste_basket.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket" />
+      <label text="Waste Basket" fr.text="Poubelle" ja.text="ゴミ箱" />
+      <key key="amenity" value="waste_basket" />
+
+      <multiselect key="waste" text="Type of waste" values="trash;oil;drugs;organic;plastic;rubble;dog_excrement;cigarettes" />
+    </item>
+
+    <item name="Recycling Container" fr.name="Conteneur de recyclage" ja.name="リサイクル用の保管所" type="node" icon="presets/service/recycling/recycling_container.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Drecycling" />
+      <label text="Recycling Container" fr.text="Conteneur de recyclage" ja.text="リサイクル用の保管所" />
+      <key key="amenity" value="recycling" />
+      <key key="recycling_type" value="container" />
+
+      <combo key="location" text="Is it an underfloor container?" values="underground" />
+
+      <label text="---------------------------" />
+
+      <check key="recycling:aerosol_cans" text="Home and DIY (etc.) aerosol cans (e.g. hairspray, spray paint, etc.)" />
+      <check key="recycling:animal_waste" text="Animal waste" />
+      <check key="recycling:aluminium" text="Aluminium" />
+      <check key="recycling:bags" text="All kinds of bags." />
+      <check key="recycling:batteries" text="Household batteries (e.g. D-cell, 9-volt). Does not imply larger batteries are accepted. There are a handful of uses of recycling:car_batteries." />
+      <check key="recycling:belts" text="All belts related to clothing." />
+      <check key="recycling:beverage_cartons" text="Carton package (multi-materials, e.g. Tetra Pak) for drink and food – possible duplicate of more frequently used recycling:cartons; see above" />
+      <check key="recycling:bicycles" text="Bicycles" />
+      <check key="recycling:books" text="Donation of books" />
+      <check key="recycling:cans" text="Cans" />
+      <check key="recycling:car_batteries" text="Some facilities will take household batteries but not car batteries" />
+      <check key="recycling:cardboard" text="Cardboard" />
+      <check key="recycling:cartons" text="Paper based cartons (for drink or food)" />
+      <check key="recycling:cds" text="Compact discs and DVDs" />
+      <check key="recycling:chipboard" text="Chipboard" />
+      <check key="recycling:christmas_trees" text="Place where old christmas trees are collected, use with opening_hours=Jan 01-Jan 15 or so." />
+      <check key="recycling:clothes" text="Donation of clothes, including shoes (e.g. Humana and others)" />
+      <check key="recycling:coffee_capsules" text="Shows if recycling facilities take coffee capsules" />
+      <check key="recycling:computers" text="Computers" />
+      <check key="recycling:cooking_oil" text="Cooking oil" />
+      <check key="recycling:cork" text="Cork" />
+      <check key="recycling:drugs" text="Expired drugs." />
+      <check key="recycling:electrical_items" text="Larger electrical items like fridges, freezers, dishwashers, etc. (See also recycling:white_goods below, which tends to mean fridges, freezers, washing machines, dishwashers, ovens in British English; we'd probably choose recycling:electrical_items or recycling:small_appliances for appliances like TVs, vacuum cleaners, microwaves and anything smaller)" />
+      <check key="recycling:engine_oil" text="Engine oil" />
+      <check key="recycling:fluorescent_tubes" text="Fluorescent tubes" />
+      <check key="recycling:foil" text="Kitchen foil/ tin foil" />
+      <check key="recycling:furniture" text="Piece of furniture or furnishing (ES: mueble)" />
+      <check key="recycling:gas_bottles" text="Pressurized gas bottles such as those for camping propane and butane. These are often prohibited elsewhere (See Coleman's Green Key program)." />
+      <check key="recycling:glass" text="Implies recycling:glass_bottles=yes, but there's no standard yet for indicating which of the trickier types (drinking glasses, window glass, light bulb glass, tempered glass, borosilicate glass, Pyrex) are accepted" />
+      <check key="recycling:glass_bottles" text="Includes jars but not any of the trickier types listed above under recycling:glass" />
+      <check key="recycling:green_waste" text="Green waste" />
+      <check key="recycling:hazardous_waste" text="Common house hold hazardous waste (paints, chemicals, asbestos)." />
+      <check key="recycling:hardcore" text="Possible duplicate of more frequently used recycling:rubble; see below." />
+      <check key="recycling:low_energy_bulbs" text="Low energy bulbs" />
+      <check key="recycling:magazines" text="Magazines" />
+      <check key="recycling:metal" text="All sorts of metal – possible duplicate of more frequently used recycling:scrap_metal; see below." />
+      <check key="recycling:mobile_phones" text="Mobile_phones" />
+      <check key="recycling:newspaper" text="Newspaper" />
+      <check key="recycling:organic" text="Organic remains of food that are recycled into biogas or compost" />
+      <check key="recycling:paint" text="Paint" />
+      <check key="recycling:pallets" text="Wooden shipping pallets" />
+      <check key="recycling:paper" text="Paper" />
+      <check key="recycling:paper_packaging" text="Paper packaging" />
+      <check key="recycling:pens" text="Writing instruments, usually plastic pens" />
+      <check key="recycling:PET" text="This usually includes PET (or PETE: Polyethylene terephthalate) bottles" />
+      <check key="recycling:plasterboard" text="This usually includes all loose plaster, based on Gypsum" />
+      <check key="recycling:plastic" text="In the UK at least, often centres/containers will distinguish between (broadly) hard plastics (typically ones that shatter), soft plastics (typically bendy food packaging; black food plastic may be an exception), carrier bags, and all other stretchy plastics. Many will accept only a subset of these, so try to pick more specific categories if you can." />
+      <check key="recycling:plastic_bags" text="Plastic bags" />
+      <check key="recycling:plastic_bottles" text="Often they allow bottles but not other plastic items!" />
+      <check key="recycling:plastic_packaging" text="Other packaging made out of plastic" />
+      <check key="recycling:polyester" text="Polyester" />
+      <check key="recycling:polystyrene_foam" text="Polystyrene foam. Can be Styrofoam™, generic extruded polystyrene foam, or generic expanded polystyrene foam." />
+      <check key="recycling:printer_cartridges" text="See below for more specific restrictions, not all centres do both ink and toner (e.g. Ross on Wye)" />
+      <check key="recycling:printer_toner_cartridges" text="Printer toner cartridges" />
+      <check key="recycling:printer_inkjet_cartridges" text="Printer inkjet cartridges" />
+      <check key="recycling:rubble" text="Bricks and building rubble; see also recycling:hardcore above." />
+      <check key="recycling:scrap_metal" text="Scrap metal" />
+      <check key="recycling:sheet_metal" text="Sheet metal" />
+      <check key="recycling:small_appliances" text="Small appliances" />
+      <check key="recycling:small_electrical_appliances" text="Small electrical items such as computer mice, keyboards, electric razors, pocket radios, hair dryers, irons, electric kettles, small quantities of electric cables, etc." />
+      <check key="recycling:styrofoam" text="Typically refers to expanded styrofoam, such as styrofoam box or packing material" />
+      <check key="recycling:tyres" text="Tyres" />
+      <check key="recycling:tv_monitor" text="TV monitor" />
+      <check key="recycling:waste" text="General waste container (black bags) (don't use this if the waste is not recycled, use a tag like amenity=waste_disposal or amenity=waste_basket instead)" />
+      <check key="recycling:white_goods" text="In British English this only means fridges, freezers, washing machines, dishwashers, ovens; see also recycling:electrical_items and recycling:small_appliances above, which might be better suited for appliances like TVs, vacuum cleaners, microwaves and anything smaller)" />
+      <check key="recycling:wood" text="Wood" />
+      <check key="recycling:shoes" text="Shoes" />
+    </item>
+
+    <item name="Surveillance Camera" fr.name="Caméra de surveillance" ja.name="監視カメラ" type="node" icon="presets/service/surveillance.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dsurveillance" />
+      <label text="Surveillance Camera" fr.text="Caméra de surveillance" ja.text="監視カメラ" />
+      <key key="man_made" value="surveillance" />
+      <key key="surveillance:type" value="camera" />
+
+      <combo key="surveillance" text="Type of surveillance" values="public,indoor,outdoor" default="public" />
+      <combo key="surveillance:zone" text="Zone of the surveillance" values="town,parking,traffic,shop,bank,building" />
+
+      <combo key="camera:type" text="Type of camera" values="fixed,panning,dome" />
+      <combo key="camera:mount" text="Camera mount" values="pole,wall,ceiling,building,roof,street_lamp,traffic_signal,gantry" />
+
+      <text key="contact:webcam" text="Webcam feed URL" />
+    </item>
+
+    <group name="Fire Hydrants" fr.name="Bornes d'incendie" ja.name="消火栓" icon="presets/service/fire_hydrant.svg">
+      <item name="Fire Hydrant (basic)" type="node" icon="presets/service/fire_hydrant.svg">
+        <link href="https://wiki.openstreetmap.org/wiki/Tag:emergency%3Dfire_hydrant" />
+        <label text="Fire Hydrant" />
+        <key key="emergency" value="fire_hydrant" />
+
+        <!-- <text key="operator" text="operator" /> -->
+        <!-- <text key="operator:phone" text="operator:phone" default="+81-3-" /> -->
+        <!-- <text key="operator:ja-Hira" text="operator:ja-Hira" /> -->
+        <!-- <text key="operator:ja-Latn" text="operator:ja-Latn" /> -->
+        <!-- <text key="operator:en" text="operator:en" /> -->
+
+        <text key="ref" text="Reference" />
+        <combo key="fire_hydrant:type" text="Type" values="underground,pillar,wall,pond" default="pillar" />
+        <combo key="fire_hydrant:position" text="Position" values="sidewalk,lane,parking_lot,green" default="sidewalk" />
+        <text key="fire_hydrant:diameter" text="Diameter (mm)" />
+        <text key="fire_hydrant:pressure" text="Pressure (bar)" />
+      </item>
+
+      <item name="Fire Hydrant (Nakano-ku)" type="node" icon="presets/service/fire_hydrant.svg">
+        <link href="https://wiki.openstreetmap.org/wiki/Tag:emergency%3Dfire_hydrant" />
+        <label text="Fire Hydrant" />
+        <key key="emergency" value="fire_hydrant" />
+
+        <!-- <text key="operator" /> -->
+        <!-- <text key="operator:phone" default="+81-3-" /> -->
+        <!-- <text key="operator:ja-Hira" /> -->
+        <!-- <text key="operator:ja-Latn" /> -->
+        <!-- <text key="operator:en" /> -->
+
+        <text key="ref" text="Reference" default="上X-XX" />
+        <combo key="fire_hydrant:type" text="Type" values="underground,pillar,wall,pond" default="pillar" />
+        <combo key="fire_hydrant:position" text="Position" values="sidewalk,lane,parking_lot,green" default="sidewalk" />
+        <text key="fire_hydrant:diameter" text="Diameter (mm)" />
+        <text key="fire_hydrant:pressure" text="Pressure (bar)" />
+      </item>
+
+      <item name="Fire Hydrant (Shinjuku-ku)" type="node" icon="presets/service/fire_hydrant.svg">
+        <link href="https://wiki.openstreetmap.org/wiki/Tag:emergency%3Dfire_hydrant" />
+        <label text="Fire Hydrant" />
+        <key key="emergency" value="fire_hydrant" />
+
+        <!-- <text key="operator" /> -->
+        <!-- <text key="operator:phone" default="+81-3-" /> -->
+        <!-- <text key="operator:ja-Hira" /> -->
+        <!-- <text key="operator:ja-Latn" /> -->
+        <!-- <text key="operator:en" /> -->
+
+        <text key="ref" text="Reference" default="XXXX" />
+        <combo key="fire_hydrant:type" text="Type" values="underground,pillar,wall,pond" default="pillar" />
+        <combo key="fire_hydrant:position" text="Position" values="sidewalk,lane,parking_lot,green" default="sidewalk" />
+        <text key="fire_hydrant:diameter" text="Diameter (mm)" />
+        <text key="fire_hydrant:pressure" text="Pressure (bar)" />
+      </item>
+    </group>
+
+    <item name="Mail Box" type="node" icon="presets/service/post_box.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dmail_box" />
+      <label text="Mail Box" />
+      <key key="amenity" value="mail_box" />
+
+      <!-- <text key="operator" value="日本郵政公社" /> -->
+      <!-- <text key="operator:ja-Hira" value="にっぽんゆうせいこうしゃ" /> -->
+      <!-- <text key="operator:ja-Latn" value="Nippon Yūsei Kōsha" /> -->
+      <!-- <text key="operator:en" value="Japan Post" /> -->
+      <!-- <text key="operator:wikidata" value="Q1372543" /> -->
+
+      <!-- <combo key="post_box:type" text="Type" values="lamp,pillar,wall" default="lamp" /> -->
+      <text key="ref" text="Reference" />
+      <text key="collection_times" text="Collection Times" />
+      <check key="drive_through" text="Can we drive up to it and drop the mail from a car?" default="off" />
+
+      <text key="addr:postcode" text="Post Code" />
+      <text key="addr:province" text="Province (都道府県)" default="東京都" />
+      <text key="addr:city" text="Municipality (市町村区)" />
+      <text key="addr:quarter" text="Ōaza / Machi" />
+      <text key="addr:neighbourhood" text="Koaza / Aza / Chō / Chōme" />
+      <text key="addr:block_number" text="Block no." />
+      <text key="addr:housenumber" text="Building no." />
+    </item>
+
+    <item name="Telephone" type="node" icon="presets/service/telephone.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtelephone" />
+      <label text="Telephone" />
+      <key key="amenity" value="telephone" />
+
+      <!-- <text key="operator" value="日本電信電話株式会社" /> -->
+      <!-- <text key="operator:ja-Hira" value="にっぽんでんしんでんわかぶしきがいしゃ" /> -->
+      <!-- <text key="operator:ja-Latn" value="Nippon Denshin Denwa Kabushiki-gaisha" /> -->
+      <!-- <text key="operator:en" value="NTT" /> -->
+      <!-- <text key="operator:wikidata" value="Q1054787" /> -->
+
+      <text key="ref" text="Reference" />
+      <check key="fee" text="Do we have to pay to use it?" default="on" />
+      <check key="payment:coins" text="Can we pay using coins?" default="on" />
+      <check key="payment:telephone_cards" text="Can we pay using telephone cards?" default="on" />
+      <combo key="covered" text="Covered" values="yes,no,booth" default="booth" />
+      <check key="indoor" text="Is it inside a building?" default="off" />
+      <combo key="internet_access" text="Internet Access" values="yes,no,wlan" default="no" />
+
+      <check key="wheelchair" text="Is the phone lowered?" default="off" />
+    </item>
+
+    <item name="Doctor" fr.name="Médecin" ja.name="診察所" type="node,closedway,multipolygon" icon="presets/health/doctors.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Ddoctors" />
+      <label text="Doctors" fr.text="Médecin" ja.text="診察所" />
+      <key key="amenity" value="doctors" />
+      <key key="healthcare" value="doctor" />
+
+      <multiselect key="healthcare:speciality" text="Speciality" values="allergology;anatomy;anaesthetics;biochemistry;biological_haematology;biology;cardiology;cardiac_surgery;child_psychiatry;community;dental_oral_maxillo_facial_surgery;dermatology;dermatovenereology;diagnostic_radiology;emergency;endocrinology;gastroenterological_surgery;gastroenterology;general;geriatrics;gynaecology;haematology;hepatology;immunology;infectious_diseases;intensive;internal;maxillofacial_surgery;microbiology;nephrology;neurology;neurophysiology;neuropsychiatry;neurosurgery;nuclear;occupational;oncology;ophthalmology;orthodontics;orthopaedics;otolaryngology;paediatric_surgery;paediatrics;palliative;pathology;pharmacology;physiatry;plastic_surgery;podiatry;proctology;psychiatry;pulmonology;radiology;radiotherapy;rheumatology;stomatology;surgery;surgical_oncology;thoracic_surgery;transplant;trauma;tropical;urology;vascular_surgery;vaccination;venereology" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Dentist" fr.name="Dentiste" ja.name="歯医者" type="node,closedway,multipolygon" icon="presets/health/dentist.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Ddentist" />
+      <label text="Dentist" fr.text="Dentiste" ja.text="歯医者" />
+      <key key="amenity" value="dentist" />
+      <key key="healthcare" value="dentist" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+    </item>
+
+    <item name="Sentō / Onsen" fr.name="Bains publics" ja.name="銭湯 / 温泉" type="node,closedway,multipolygon" icon="presets/leisure/sauna.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpublic_bath" />
+      <label text="Sentō / Onsen" fr.text="Bains publics" ja.text="銭湯 / 温泉" />
+      <key key="amenity" value="public_bath" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <check key="fee" text="Is there a fee?" default="on" />
+      <check key="payment:cash" text="Can we pay using coins and notes?" default="on" />
+      <check key="payment:icsf" text="Can we pay using Suica?" default="off" />
+
+      <check key="male" text="Can men bath there?" default="on" />
+      <check key="female" text="Can women bath there?" default="on" />
+      <check key="unisex" text="Is there a shared male / female bath?" default="off" />
+
+      <combo key="bath:type" text="Type of batch" values="onsen,hot_spring,foot_bath" default="" />
+      <combo key="bath:open_air" text="Open air" values="yes,no" default="no" />
+    </item>
+
+    <item name="Guidepost" fr.name="Poteau de guidage" ja.name="道標" type="node" icon="presets/misc/information/guidepost.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost" />
+      <label text="Guidepost" fr.text="Poteau de guidage" ja.text="道標" />
+      <key key="tourism" value="information" />
+      <key key="information" value="guidepost" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <check key="hiking" text="Is it for hiking?" default="" />
+      <text key="ele" text="Elevation" />
+      <text key="ref" text="Reference" />
+    </item>
+
+    <item name="Jizō" ja.name="地蔵" type="node" icon="presets/religion/buddhism.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
+      <label text="Jizō" ja.text="地蔵" />
+
+      <key key="historic" value="wayside_shrine" />
+      <key key="religion" value="buddhist" />
+    </item>
+
+    <item name="Onsen Ryokan" ja.name="温泉旅館" type="node,closedway,multipolygon" icon="presets/accommodation/hotel.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
+      <label text="Onsen Ryokan" ja.text="温泉旅館" />
+      <key key="tourism" value="hotel" />
+      <key key="bath:type" value="onsen" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+      <text key="opening_hours" text="Opening hours" />
+
+      <text key="website" text="Website" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+
+      <text key="rooms" text="Rooms" />
+      <text key="beds" text="Beds" />
+
+      <combo key="internet_access" text="Internet access" values="wlan,no" default="no" />
+
+      <check key="bath:open_air" text="Open air" default="on" />
+    </item>
+
+    <item name="Guest House" ja.name="ゲストハウス" type="node,closedway,multipolygon" icon="presets/accommodation/guest_house.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:tourism%3Dguest_house" />
+      <label text="Guest House" ja.text="ゲストハウス" />
+      <key key="tourism" value="guest_house" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+
+      <text key="website" text="Website" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+
+      <text key="rooms" text="Rooms" />
+      <text key="beds" text="Beds" />
+
+      <combo key="internet_access" text="Internet access" values="wlan,no" default="no" />
+    </item>
+
+    <item name="Board Game Café" ja.name="ボードゲームカフェ" type="node,closedway,multipolygon" icon="presets/food/cafe.svg">
+      <link href="https://help.openstreetmap.org/questions/68127/how-would-you-tag-board-game-cafes" />
+      <label text="Board Game Café" ja.text="ボードゲームカフェ" />
+      <key key="amenity" value="cafe" />
+      <key key="cafe" value="board_game" />
+      <!-- <key key="board_game" value="yes" /> -->
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+
+      <text key="website" text="Website" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+
+      <combo key="internet_access" text="Internet access" values="wlan,no" default="no" />
+    </item>
+
+    <item name="Karaoke" fr.name="Karaoké" ja.name="カラオケ" type="node,closedway,multipolygon" icon="presets/shop/music.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dkaraoke_box" />
+      <label text="Karaoke" fr.text="Karaoké" ja.text="カラオケ" />
+      <key key="amenity" value="karaoke_box" />
+
+      <text key="name" text="Name" />
+      <text key="name:en" text="English name" />
+      <text key="name:ja-Latn" text="Name in romaji" />
+      <text key="name:ja-Hira" text="Name in kana" />
+
+      <text key="phone" text="Phone" default="+81-3-" />
+
+      <text key="website" text="Website" />
+
+      <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+
+      <combo key="internet_access" text="Internet access" values="wlan,no" default="no" />
+    </item>
+
+    <group name="Language Schools" fr.name="Écoles de langue" ja.name="言語教育" icon="presets/education/school.svg">
+      <item name="Japanese Language School" fr.name="École de japonais" ja.name="日本語学校" type="node,closedway,multipolygon" icon="presets/education/school.svg">
+        <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlanguage_school" />
+        <label text="Japanese Language School" fr.text="École de japonais" ja.text="日本語学校" />
+        <key key="amenity" value="language_school" />
+        <key key="language:ja" value="main" />
+
+        <text key="name" text="Name" />
+        <text key="name:en" text="English name" />
+        <text key="name:ja-Latn" text="Name in romaji" />
+        <text key="name:ja-Hira" text="Name in kana" />
+
+        <text key="phone" text="Phone" default="+81-3-" />
+
+        <text key="website" text="Website" />
+
+        <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+      </item>
+
+      <item name="English Language School" fr.name="École d'anglais" ja.name="英語学校" type="node,closedway,multipolygon" icon="presets/education/school.svg">
+        <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlanguage_school" />
+        <label text="English Language School" fr.text="École d'anglais" ja.text="英語語学校" />
+        <key key="amenity" value="language_school" />
+        <key key="language:en" value="main" />
+
+        <text key="name" text="Name" />
+        <text key="name:en" text="English name" />
+        <text key="name:ja-Latn" text="Name in romaji" />
+        <text key="name:ja-Hira" text="Name in kana" />
+
+        <text key="phone" text="Phone" default="+81-3-" />
+
+        <text key="website" text="Website" />
+
+        <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+      </item>
+
+      <item name="French Language School" fr.name="École de français" ja.name="フランス語学校" type="node,closedway,multipolygon" icon="presets/education/school.svg">
+        <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dlanguage_school" />
+        <label text="French Language School" fr.text="École de français" ja.text="フランス語学校" />
+        <key key="amenity" value="language_school" />
+        <key key="language:fr" value="main" />
+
+        <text key="name" text="Name" />
+        <text key="name:en" text="English name" />
+        <text key="name:ja-Latn" text="Name in romaji" />
+        <text key="name:ja-Hira" text="Name in kana" />
+
+        <text key="phone" text="Phone" default="+81-3-" />
+
+        <text key="website" text="Website" />
+
+        <combo key="wheelchair" text="Is it accessible with a wheelchair?" values="yes,limited,no" default="" />
+      </item>
+    </group>
+
+  </group>
+
+</presets>
