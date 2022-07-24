@@ -1,0 +1,2 @@
+# josm-presets
+JOSM presets
