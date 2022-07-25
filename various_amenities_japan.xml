@@ -324,6 +324,17 @@
       <key key="religion" value="buddhist" />
     </item>
 
+    <item name="Grit Bin" fr.name="Bac à sel / sable" ja.name="すべり止用砂・グリット入れ" type="node" icon="presets/misc/grit_bin.svg">
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dgrit_bin" />
+      <label text="Grit Bin" fr.text="Bac à sel / sable" ja.text="すべり止用砂・グリット入れ" />
+
+      <key key="amenity" value="grit_bin" />
+      <combo key="content" text="Content" values="sand,salt" default="sand" />
+      <combo key="material" text="Material" values="plastic,wood,metal" default="plastic" />
+      <combo key="access" text="Access" values="yes,private" default="yes" />
+      <check key="seasonal" text="Seasonal" />
+    </item>
+
     <item name="Onsen Ryokan" ja.name="温泉旅館" type="node,closedway,multipolygon" icon="presets/accommodation/hotel.svg">
       <link href="https://wiki.openstreetmap.org/wiki/JA:How_to_map_a" />
       <label text="Onsen Ryokan" ja.text="温泉旅館" />
