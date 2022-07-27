@@ -196,19 +196,19 @@
     </group>
 
     <item name="Mail Box" type="node" icon="presets/service/post_box.svg">
-      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dmail_box" />
-      <label text="Mail Box" />
-      <key key="amenity" value="mail_box" />
+      <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dpost_box" />
+      <label text="Post Box" />
+      <key key="amenity" value="post_box" />
 
-      <!-- <text key="operator" value="日本郵政公社" /> -->
-      <!-- <text key="operator:ja-Hira" value="にっぽんゆうせいこうしゃ" /> -->
-      <!-- <text key="operator:ja-Latn" value="Nippon Yūsei Kōsha" /> -->
+      <!-- <text key="operator" value="日本郵便株式会社" /> -->
+      <!-- <text key="operator:ja-Hira" value="にっぽんゆうびんかぶしきがいしゃ" /> -->
+      <!-- <text key="operator:ja-Latn" value="Nippon Yūbin Kabushiki-gaisha" /> -->
       <!-- <text key="operator:en" value="Japan Post" /> -->
-      <!-- <text key="operator:wikidata" value="Q1372543" /> -->
+      <!-- <text key="operator:wikidata" value="Q11509260" /> -->
 
-      <!-- <combo key="post_box:type" text="Type" values="lamp,pillar,wall" default="lamp" /> -->
       <text key="ref" text="Reference" />
       <text key="collection_times" text="Collection Times" />
+      <combo key="post_box:type" text="Type" values="lamp,meter,pillar,wall" default="pillar" />
       <check key="drive_through" text="Can we drive up to it and drop the mail from a car?" default="off" />
 
       <text key="addr:postcode" text="Post Code" />
