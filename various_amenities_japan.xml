@@ -252,8 +252,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <text key="phone" text="Phone" default="+81-3-" />
       <text key="opening_hours" text="Opening hours" />
@@ -269,8 +270,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <text key="phone" text="Phone" default="+81-3-" />
       <text key="opening_hours" text="Opening hours" />
@@ -285,8 +287,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <check key="fee" text="Is there a fee?" default="on" />
       <check key="payment:cash" text="Can we pay using coins and notes?" default="on" />
@@ -308,8 +311,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <check key="hiking" text="Is it for hiking?" default="" />
       <text key="ele" text="Elevation" />
@@ -343,8 +347,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <text key="phone" text="Phone" default="+81-3-" />
       <text key="opening_hours" text="Opening hours" />
@@ -368,8 +373,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <text key="phone" text="Phone" default="+81-3-" />
 
@@ -392,8 +398,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <text key="phone" text="Phone" default="+81-3-" />
 
@@ -411,8 +418,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
 
       <text key="phone" text="Phone" default="+81-3-" />
 
@@ -432,8 +440,9 @@
 
         <text key="name" text="Name" />
         <text key="name:en" text="English name" />
+        <text key="name:ja" text="Japanese name (usually same as name)" />
         <text key="name:ja-Latn" text="Name in romaji" />
-        <text key="name:ja-Hira" text="Name in kana" />
+        <text key="name:ja-Hira" text="Name in hiragana" />
 
         <text key="phone" text="Phone" default="+81-3-" />
 
@@ -450,8 +459,9 @@
 
         <text key="name" text="Name" />
         <text key="name:en" text="English name" />
+        <text key="name:ja" text="Japanese name (usually same as name)" />
         <text key="name:ja-Latn" text="Name in romaji" />
-        <text key="name:ja-Hira" text="Name in kana" />
+        <text key="name:ja-Hira" text="Name in hiragana" />
 
         <text key="phone" text="Phone" default="+81-3-" />
 
@@ -468,8 +478,9 @@
 
         <text key="name" text="Name" />
         <text key="name:en" text="English name" />
+        <text key="name:ja" text="Japanese name (usually same as name)" />
         <text key="name:ja-Latn" text="Name in romaji" />
-        <text key="name:ja-Hira" text="Name in kana" />
+        <text key="name:ja-Hira" text="Name in hiragana" />
 
         <text key="phone" text="Phone" default="+81-3-" />
 

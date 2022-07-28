@@ -14,8 +14,9 @@
 
       <text key="name" text="Name" />
       <text key="name:en" text="English name" />
+      <text key="name:ja" text="Japanese name (usually same as name)" />
       <text key="name:ja-Latn" text="Name in romaji" />
-      <text key="name:ja-Hira" text="Name in kana" />
+      <text key="name:ja-Hira" text="Name in hiragana" />
       <text key="opening_hours" text="Opening hours" />
       <text key="phone" text="Phone" default="+81-3-" />
       <text key="website" text="Website" />

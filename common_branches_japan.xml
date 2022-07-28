@@ -12,6 +12,7 @@
     <item name="Nakano" ja.name="中野店" type="node,closedway,multipolygon">
       <label text="Nakano" ja.text="中野店" />
       <key key="branch" value="中野店" />
+      <key key="branch:ja" value="中野店" />
       <key key="branch:ja-Hira" value="なかのてん" />
       <key key="branch:ja-Latn" value="Nakano Ten" />
       <key key="branch:en" value="Nakano" />
@@ -19,7 +20,8 @@
 
     <item name="Nakano Sun Mall" ja.name="中野サンモール店" type="node,closedway,multipolygon">
       <label text="Nakano Sun Mall" ja.text="中野サンモール店" />
-      <key key="branch" value="中野店" />
+      <key key="branch" value="中野サンモール店" />
+      <key key="branch:ja" value="中野サンモール店" />
       <key key="branch:ja-Hira" value="なかのさんもーるてん" />
       <key key="branch:ja-Latn" value="Nakano San Mōru Ten" />
       <key key="branch:en" value="Nakano Sun Mall" />
@@ -27,7 +29,8 @@
 
     <item name="Nakano Broadway" ja.name="中野ブロードウェイ店" type="node,closedway,multipolygon">
       <label text="Nakano Broadway" ja.text="中野ブロードウェイ店" />
-      <key key="branch" value="中野店" />
+      <key key="branch" value="中野ブロードウェイ店" />
+      <key key="branch:ja" value="中野ブロードウェイ店" />
       <key key="branch:ja-Hira" value="なかのぶろーどうぇいてん" />
       <key key="branch:ja-Latn" value="Nakano Burōdowei Ten" />
       <key key="branch:en" value="Nakano Broadway" />
@@ -36,6 +39,7 @@
     <item name="Shinjuku" ja.name="新宿店" type="node,closedway,multipolygon">
       <label text="Shinjuku" ja.text="新宿店" />
       <key key="branch" value="新宿店" />
+      <key key="branch:ja" value="新宿店" />
       <key key="branch:ja-Hira" value="しんじゅくてん" />
       <key key="branch:ja-Latn" value="Shinjuku Ten" />
       <key key="branch:en" value="Shinjuku" />
@@ -44,6 +48,7 @@
     <item name="Ochiai" ja.name="落合店" type="node,closedway,multipolygon">
       <label text="Ochiai" ja.text="落合店" />
       <key key="branch" value="落合店" />
+      <key key="branch:ja" value="落合店" />
       <key key="branch:ja-Hira" value="おちあいてん" />
       <key key="branch:ja-Latn" value="Ochiai Ten" />
       <key key="branch:en" value="Ochiai" />
@@ -52,9 +57,19 @@
     <item name="Mejiro" ja.name="目白店" type="node,closedway,multipolygon">
       <label text="Mejiro" ja.text="目白店" />
       <key key="branch" value="目白店" />
+      <key key="branch:ja" value="目白店" />
       <key key="branch:ja-Hira" value="めじろてん" />
       <key key="branch:ja-Latn" value="Mejiro Ten" />
       <key key="branch:en" value="Mejiro" />
+    </item>
+
+    <item name="Futako-Tamagawa" ja.name="二子玉川店" type="node,closedway,multipolygon">
+      <label text="Futako-Tamagawa" ja.text="二子玉川店" />
+      <key key="branch" value="二子玉川店" />
+      <key key="branch:ja" value="二子玉川店" />
+      <key key="branch:ja-Hira" value="ふたこたまがわてん" />
+      <key key="branch:ja-Latn" value="Futako-Tamagawa Ten" />
+      <key key="branch:en" value="Futako-Tamagawa" />
     </item>
 
   </group>
