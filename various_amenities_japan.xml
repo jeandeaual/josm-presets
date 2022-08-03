@@ -15,7 +15,9 @@
       <key key="amenity" value="vending_machine" />
       <!-- <key key="currency:JPY" value="yes" /> -->
 
-      <check key="payment:cash" text="Can we pay using coins and notes?" default="on" />
+      <!-- <check key="payment:cash" text="Can we pay using coins and notes?" default="on" /> -->
+      <check key="payment:coins" text="Can we pay using coins?" default="on" />
+      <check key="payment:notes" text="Can we pay using notes?" default="on" />
       <check key="payment:icsf" text="Can we pay using Suica / contactless payment?" />
       <multiselect key="vending" text="What does it sell?" values="drinks;coffee;food;newspapers;water;cigarettes;condoms" />
     </item>
